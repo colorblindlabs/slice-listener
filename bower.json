@@ -3,13 +3,13 @@
   "authors": [
     "bayuhafiz <bayu@colorblindlabs.com>"
   ],
-  "description": "Dashboard panel for Slice Application",
+  "description": "New order listener for Slice App",
   "main": "index.html",
   "moduleType": [
     "amd"
   ],
   "license": "MIT",
-  "homepage": "http://dash.sliceapp.co/",
+  "homepage": "-",
   "private": true,
   "ignore": [
     "**/.*",
