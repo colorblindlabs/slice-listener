@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize -->
+    <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
+    <!-- Custom style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- :: ANGULAR MATERIALIZE :: -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-materialize/src/angular-materialize.js"></script>
+    <!-- :: PLUGINS :: -->
+    <script src="//js.pusher.com/3.0/pusher.min.js"></script>
+    <script src="//cdn.jsdelivr.net/angular.pusher/latest/pusher-angular.min.js"></script>
+    <!-- :: MAIN SCRIPTS :: -->
+    <script src="app.js"></script>
+</head>
+
+<body ng-app="SliceListener" ng-controller="ctrl">
+    <!-- Logo -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <span class="brand-logo center hide-on-small-only" style="vertical-align:center;margin-left:20px;">
+                    <img src="img/logo.png" style="margin-top: 10px;width:120px;"/>
+                </span>
+                <span class="brand-logo left hide-on-med-and-up" style="vertical-align:center;margin-left:10px;"><!-- on mobile only -->
+                    <img src="img/logo.png" style="margin-top: 12px;width:90px;"/>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- Contents -->
+    <div class="row center-align ">
+        <div class="col s12" ng-if="order" style="margin-top:15%!important;">
+            <h4 class="grey-text">Printing following order...</h4>
+            <p class="flow-text grey-text">
+                {{order}}
+            </p>
+        </div>
+        <div class="col s12" ng-if="!order" style="margin-top:20%!important;">
+            <p class="flow-text grey-text">
+                <i class="material-icons large">local_bar</i><br/>
+                No incoming data yet
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

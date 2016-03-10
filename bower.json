@@ -1,0 +1,25 @@
+{
+  "name": "Slice Dashboard",
+  "authors": [
+    "bayuhafiz <bayu@colorblindlabs.com>"
+  ],
+  "description": "Dashboard panel for Slice Application",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "homepage": "http://dash.sliceapp.co/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.2.18",
+    "angular-materialize": "^0.1.3"
+  }
+}

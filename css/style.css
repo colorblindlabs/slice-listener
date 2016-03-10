@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'avenir_medium';
+    src: url('../fonts/avenir/Avenir-Medium.otf');
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 80%;
+}
+
+html.text-large {
+    font-size: 100%;
+}
+
+html.text-small {
+    font-size: 60%;
+}
+
+body {
+    font-family: 'avenir_medium'!important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background: #f0f0f0;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0)!important;
+    /* removing shadow by Materialize default */
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
